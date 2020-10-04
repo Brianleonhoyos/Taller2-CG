@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<figurasgeometricas>
+  <figurageometrica nombre="Rombo">
+    <punto1 x="229.0" y="90.0" />
+    <punto2 x="166.0" y="155.0" />
+    <punto3 x="229.0" y="220.0" />
+    <punto4 x="292.0" y="155.0" />
+  </figurageometrica>
+</figurasgeometricas>

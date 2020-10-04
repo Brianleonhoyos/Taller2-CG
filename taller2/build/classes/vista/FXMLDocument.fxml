@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="865.0" prefWidth="1483.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladorInterfaz.FXMLDocumentController">
+   <children>
+      <Button fx:id="btnrombo" layoutX="108.0" layoutY="211.0" mnemonicParsing="false">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill></Button>
+      <Button fx:id="btnpentagono" layoutX="108.0" layoutY="301.0" mnemonicParsing="false" />
+      <Button fx:id="btnOctagono" layoutX="249.0" layoutY="211.0" mnemonicParsing="false" />
+      <Button fx:id="btnPacman" layoutX="249.0" layoutY="301.0" mnemonicParsing="false">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <Button fx:id="btnHexagono" layoutX="108.0" layoutY="417.0" mnemonicParsing="false" />
+      <Button fx:id="btnRectangulo" layoutX="249.0" layoutY="417.0" mnemonicParsing="false">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <Button fx:id="btnHeptagono" layoutX="108.0" layoutY="515.0" mnemonicParsing="false" />
+      <MenuBar prefHeight="31.0" prefWidth="180.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#guardarArchivo" text="Guardar en archivo XML" />
+                  <MenuItem mnemonicParsing="false" onAction="#leerArchivo" text="Leer dearchivo XML" />
+                  <MenuItem mnemonicParsing="false" onAction="#guardarimagen" text="Guardar una imagen" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Canvas fx:id="canvas" height="731.0" layoutX="381.0" layoutY="73.0" onMouseClicked="#crearHeptagono" width="1048.0" />
+   </children>
+</AnchorPane>
